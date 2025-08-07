@@ -1,0 +1,27 @@
+body {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-size: cover;
+  background-position: center;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.testimonial-card {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.testimonial-card.active {
+  opacity: 1;
+}
+.gallery-item {
+  transition: transform 0.3s ease;
+}
+.gallery-item:hover {
+  transform: scale(1.03);
+}
